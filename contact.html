@@ -16,13 +16,22 @@
 
 
     <h3>You can signup to the mailing list:</h3>
+    <!--form tag is for creating a form for user -->
+    <!-- when the user will press submit button, the mailto tag will open the default mail client
+     i.e mail on mac and gmail in chrome and it puts in the email address that you have set here-->
 
+    <!-- the post here means that we are going to transfer whatever written here to our mailbox-->
+    <!-- the encoding type will be a plain text so that no funny characters would be there -->
     <form class="" action="mailto:tannuchoudhary10@gmail.com" method="post" enctype="text/plain">
       <table>
         <td>
           <tbody cellspacing = "10">
             <tr>
+             <!-- we will ask the user for their name-->
               <td><label>Your Name:</label></td>
+              <!-- and to take input we will use input type -->
+
+              <!-- the name attribute in each of these will help us to validate the data while filling the form-->
               <td><input type="text" name="YourName"></td>
             </tr>
             <tr>
@@ -44,6 +53,7 @@
       <input type="checkbox" name="">
       <label>I want to continue</label>
       <br>
+      <!-- submit button is also a type of input but instead of type = text, or email or anything we will write submit-->
       <input type="submit" name="">
 
 
