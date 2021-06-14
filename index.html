@@ -1,106 +1,142 @@
 <!DOCTYPE html>
+<!--This is where we declaredocument type, this tells the browser that what is the version of html-->
 <html lang="en" dir="ltr">
+<!--This tag tells the browser that everything in between the opening and closing of html tag will be the html code -->
 
 <head>
-  <meta charset="utf-8">
-  <title>Tannu's personal site</title>
-  <link rel="stylesheet" href="css/style.css">
+    <!--It tells the browser that how it should handle the web page -->
+    <meta charset="utf-8"> <!-- The meta element gives extra meta data or associated data to html documnet-->
+    <!--i.e all the texts inside our web page should be encoded in utf-8 (so that it should be randed correctly)-->
+    <!--to prevent mojibake, to prevent the website from coding incorrectly -->
+    <!--utf-8 is the standard encoding which includes all the international symbols which prevents the browser to mess up the letters -->
+    <!--it also includes emoji -->
+    <title>Tannu's Personal Site</title>
+    <!--This tells the browser that what would be the title of this particular page -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-   <table cellspacing="20">
-     <td><img class= "tannu circular" src="tannu.jpg" alt="Tannu's profile picture" width="170" height="200"></td>
-     <td><h1>Tannu Kumari</h1>
-     <em>Student at <a href="http://ucetvbu.ac.in/"> UCET, VBU</a> </em>
-     <p>I am a full stack developer and a competitive programmer.</p>
-     <p> I &#128420; playing chess and learning new algorithms</p> </td>
-   </table>
+    <table cellspacing="20">
+        <!--here src is the source or link of image or the filename if present in the folder, and alt is the alternative text that the browser will use in case it will not be able to render the image -->
+        <!-- during SEO google looks at the alt text to know what the image is about -->
+        <td><img class="tannu circular" src="tannu.jpg" alt="Tannu's profile picture" width="170" height="200"></td>
+        <td>
+            <!-- for heading -->
+            <h1>Tannu Kumari</h1>
+
+            <!-- i tag and em tag both italicized but there is a difference between them -->
+            <!-- em tells the browser to stress the structure of the letters but i tag just styles the letters into italics -->
+            <!-- in html we are more concerned about the structuring of the textrsther than how it looks or its style-->
+            <!-- that is why it is advisable to use em tag instead of i tag -->
+
+            <!-- to insert the link we have to use "a" tag or the anchor tag just before and after the text which we want to represent as link using href(dedtination of the hyperlink) -->
+            <!-- anchor tag is not self closing tag, we have to close it at the end, and before closing the starting tag we have to write href and link inside that -->
+            <!-- before closing the anchor tag, the text would be written which we want to be highlighted in blue -->
+            <em>Student at <strong><a href="http://ucetvbu.ac.in/"> UCET, VBU</a></strong> </em>
+
+            <!--similarly to bold the text we have two options, bold and strong-->
+            <!-- but we should always use strong because it tells that the structure of text is strong i.e it shows  importance, urgency, seriousness -->
+            <!-- The <strong> element is for content that is of "strong importance," including things of great seriousness or urgency (such as warnings).
+            This could be a sentence that is of great importance to the whole page, or you could merely try to point out that some words are of greater importance compared to nearby content.-->
+            <!-- The <strong> element is for content that is of greater importance, while the <b> element is used to draw attention to text without indicating that it's more important.-->
+            <!-- p tag is for paragraph tag-->
+            <p>I am a full stack developer and a competitive programmer.</p>
+            <p> I &#128420; playing chess and learning new algorithms</p>
+        </td>
+    </table>
+
+    <!-- for horizontal rule of size 1 and color as noshade-->
+    <hr size="1" noshade>
 
 
-  <hr size="1" noshade>
+    <h3>My skills</h3>
+    <!-- ul tag is for unordered list or bullet points whereas ordered list willb ea, b, c or 1, 2, 3-->
+    <!-- li tag inside the ul tag will be for each list item or bullet points-->
+    <!-- ol tag is for the ordered list-->
+    <!-- you can even do nesting i.e list inside list, visit mdn to see how -->
+    <ul>
+        <li>C/C++</li>
+        <li>Data structures and Algorithms</li>
+        <li>Competitive Programming</li>
+        <li>Linux</li>
+        <li>Web Devlopment</li>
+        <li>Python</li>
+    </ul>
 
-
-  <h3>My skills</h3>
-  <ul>
-    <li>C/C++</li>
-    <li>Data structures and Algorithms</li>
-    <li>Competitive Programming</li>
-    <li>Linux</li>
-    <li>Web Devlopment</li>
-    <li>Python</li>
-  </ul>
-
-  <h3>Work Experience</h3>
-  <table cellspacing="8" >
-    <thead>
-      <tr>
-        <th>Year</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Oct(2020)-feb(2021)</td>
-        <td>TA at coding Ninjas</td>
-      </tr>
-      <tr>
-        <td>Aug(2020)-oct(2020)</td>
-        <td>Mentored at Girlscript uplift project</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr size="1" noshade>
-  <h3>Proficiency Level</h3>
-  <table>
-    <tr>
-      <td>
-        <table>
-          <tbody cellspacing="10">
+    <h3>Work Experience</h3>
+    <!-- Now we are going to create a table so that everything should look organized -->
+    <!-- table will contain table head(heading) and table body and table footer and inside that it will contain table data -->
+    <!-- table cellspacing creates the space between the cells of the table which make it look more organized -->
+    <table cellspacing="8">
+        <thead>
             <tr>
-              <td>Data structures and Algorithms</td>
-              <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
+                <th>Year</th>
+                <th>Work</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Oct(2020)-feb(2021)</td>
+                <td>TA at coding Ninjas</td>
             </tr>
             <tr>
-              <td>Python</td>
-              <td>&#127775; &#127775; &#127775;&#9734;&#9734;</td>
+                <td>Aug(2020)-oct(2020)</td>
+                <td>Mentored at Girlscript uplift project</td>
             </tr>
-            <tr>
-              <td>Competitive Programming</td>
-              <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tbody cellspacing="10">
-            <tr>
-              <td>C/C++</td>
-              <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
-            </tr>
-            <tr>
-              <td>Web devlopment</td>
-              <td>&#127775; &#127775; &#127775;&#9734;&#9734;</td>
-            </tr>
-            <tr>
-              <td>Linux</td>
-              <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </table>
+        </tbody>
+    </table>
+    <hr size="1" noshade>
+    <br>
+    <h3>Proficiency Level</h3>
+    <!-- creating nesting of tables i.e table inside a table and the whole inside a table -->
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tbody cellspacing="10">
+                        <tr>
+                            <td>Data structures and Algorithms</td>
+                            <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>&#127775; &#127775; &#127775;&#9734;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Competitive Programming</td>
+                            <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tbody cellspacing="10">
+                        <tr>
+                            <td>C/C++</td>
+                            <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Web devlopment</td>
+                            <td>&#127775; &#127775; &#127775;&#9734;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Linux</td>
+                            <td>&#127775;&#127775;&#127775;&#127775;&#9734;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-
-  <br>
-
-  <a href="hobbies.html">My hobbies</a>
-  <br>
-  <a href="contact.html">Contact me</a>
-  <br />
-  <a href="https://drive.google.com/file/d/1CCFCWGaexrpB2vSlADE4BwFTvG7RXJvW/view?usp=sharing" download>Download my Resume</a>
+    <br>
+    <a href="hobbies.html">My hobbies</a>
+    <br>
+    <a href="contact.html">Contact me</a>
+    <br>
+<a download href="https://drive.google.com/file/d/1CCFCWGaexrpB2vSlADE4BwFTvG7RXJvW/view?usp=sharing" >Download my Resume</a>
 </body>
 
 </html>
