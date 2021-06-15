@@ -12,6 +12,39 @@
     <!--it also includes emoji -->
     <title>Tannu's Personal Site</title>
     <!--This tells the browser that what would be the title of this particular page -->
+    <!-- we can define css code in 3 ways, inline, internal and external-->
+    <!-- inline would be definining inside the body, this will just effect the page in which you are defining -->
+    <!-- internal would effect the entire webpage, it have to be defined in head-->
+    <!-- you just have to write the name on which you want to implement this css code, for e.g if you want to
+    effect the body then write body under style and then write the whole style code -->
+
+    <!-- external - if you want to change the style of all web pages of you website then you have to define css externally
+    i.e create another file with css extension and link it with html like this-->
+    <!-- if your website is of 200 pages, then it is not good idea to define it inline or internally-->
+
+
+   <!-- Just type link and press enter, you'll see this  <link rel="stylesheet" href="/css/master.css">
+    when browser will reach this line moving from the top, it will understand that you want to implement <style media="screen">
+    to your website and then it will go to that location which you have mentioned
+    but the problem here is that the first backward slash is telling the web to look in the root folder but in actul
+    our file is in css folder so remove that backward slash and then you are good to go
+    web will search in the same folder in which the html file is i.e  html personal site in my case
+    and then will go to folder css and then will acess the file style.css -->
+
+   <!-- now apply this link to hobbie and cotact me page also-->
+
+   <!-- the order of priority is
+   Inline css
+   Internal css
+   External css
+
+   if you will set color using all three properties then priority will be given to inline and
+   the design of the website will be according to what designes in inline, everything else will
+   be overwritten -->
+
+   <!-- using this you can apply global css using external css and if you want to change the design
+   of any particular page differently then use inline or internal, it will effect that page only leaving the rst of the pages-->
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -131,6 +164,8 @@
         </tr>
     </table>
 
+    <br>
+    <hr>
     <br>
     <a href="hobbies.html">My hobbies</a>
     <br>
