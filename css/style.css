@@ -7,11 +7,17 @@ hr{
   border-right-style: none;
   border-left-style: none;
   border-bottom-style: none;
+
+  /* we can also write it as
+  border-style: dotted none none;
+  this means that top style will be dotted, right, left and bottom will be none
+  the web page understands the order on its own*/
+
   border-width: thick;
   border-color: grey;
 
 
-  width: 7%
+  width: 5%
 }
 h1{
 
@@ -27,3 +33,27 @@ h3{
 .circular{
   border-radius: 100%;
 }
+
+/*===================================RULES OF CSS=====================================
+=============================i.e grammar of css language =============================
+               WHAT?
+                \
+                 \
+               _______
+ 1.) selector{ property : value;}
+     _______              _______
+      \                     \
+       \                     \
+      WHO?                  HOW?
+
+e.g h1
+who : whose style do you want to change
+what : what you want to change , is it the background color, is it the text color or what?
+how :  how do you want to change the background color or height or whatever, do you want it to be blue or red or what?
+
+ selector will be at the beginning and then curly braces inside which css rules are going
+  to reside, these rules will change the appearance of some of the property and then will
+  give it a new value, each rule has to end with a semi colon at the end which is equivalent
+  to  the full stop in english sentences
+
+*/
